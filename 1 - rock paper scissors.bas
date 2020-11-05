@@ -23,7 +23,7 @@ FOR x = 1 TO 3
     PRINT "AI: "; rng
 
     IF pChoice = rng THEN PRINT "draw"
-    IF pChoice > rng AND NOT 1 THEN PRINT "win":
-    IF pChoice < rng AND NOT 3 THEN PRINT "lose"
+    IF pChoice > rng AND NOT 1 THEN PRINT "win": else print "lose"
+        IF pChoice < rng AND NOT 3 THEN PRINT "lose": else print "win"
 
 NEXT x
