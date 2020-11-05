@@ -6,6 +6,7 @@
 ' do best of 3
 ' ask to play again
 
+'not finished!
 SCREEN 12
 CLEAR: CLS
 
@@ -24,6 +25,6 @@ FOR x = 1 TO 3
 
     IF pChoice = rng THEN PRINT "draw"
     IF pChoice > rng AND NOT 1 THEN PRINT "win"
-        IF pChoice < rng AND NOT 3 THEN PRINT "lose"
+    IF pChoice < rng AND NOT 3 THEN PRINT "lose"
 
 NEXT x
