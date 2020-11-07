@@ -6,19 +6,17 @@
 ' do best of 3
 ' ask to play again
 
-'not finished!
 SCREEN 12
 CLEAR: CLS
 
 FOR x = 1 TO 3
 
-    'random AI throw
+    'AI throw
     RANDOMIZE TIMER / 3
     rng = INT(RND * 2) + 1
 
     'player throw
-    PRINT
-    INPUT "1: rock | 2: paper | 3: scissors"; pChoice
+    INPUT "1: rock | 2: paper | 3: scissors"; pChoice: CLS
 
     PRINT "You: "; pChoice
     PRINT "AI: "; rng
@@ -26,5 +24,9 @@ FOR x = 1 TO 3
     IF pChoice = rng THEN PRINT "draw"
     IF pChoice > rng AND NOT 1 THEN PRINT "win"
     IF pChoice < rng AND NOT 3 THEN PRINT "lose"
+    IF pChoice = 1 AND rng = 3 THEN PRINT "win"
+    IF pChoice = 3 AND rng = 1 THEN PRINT "lose"
+
+    IF x = 3 THEN CLS: PRINT "You Win!"
 
 NEXT x
