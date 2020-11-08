@@ -27,6 +27,4 @@ FOR x = 1 TO 3
     IF pChoice = 1 AND rng = 3 THEN PRINT "win"
     IF pChoice = 3 AND rng = 1 THEN PRINT "lose"
 
-    IF x = 3 THEN CLS: PRINT "You Win!"
-
 NEXT x
